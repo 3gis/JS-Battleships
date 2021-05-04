@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href = "index.css">
+    <script src="index.js"></script>
+    <title>Battleships</title>
+</head>
+<body>
+    <div class="textarea">
+        <text id="nametag" class="name">Username</text>
+    </div>
+    <div class="container">
+        <div class="grid grid-user"></div>
+        <div class="grid grid-computer"></div>
+    </div>
+    <div style="display:flex; margin-left: 20%">
+        <div class="hit vienvietis"></div>
+        <label>Hit</label>
+        <div class="Exploded vienvietis"></div>
+        <label>Destroyed</label>
+        <div class="miss vienvietis"></div>
+        <label>Miss</label>
+    </div>
+    <div class="hidden-info">
+        <button id="start">Start Game</button>
+        <button id="rotate">Rotate</button>
+        <button id="reset">Reset</button>
+        <h3 id="whose-go">Drag your ships into the board</h3>
+        <h3 id="info"></h3>
+    </div>
+    <div class="container">
+        <div class="grid-display">
+        <div class="ship vienvietis" draggable="true">
+            <div id="vienvietis0-0" data-shipid="0"></div>
+        </div>
+        <div class="ship vienvietis" draggable="true">
+            <div id="vienvietis1-0" data-shipid="1"></div>
+        </div>
+        <div class="ship vienvietis" draggable="true">
+            <div id="vienvietis2-0" data-shipid="2"></div>
+        </div>
+        <div class="ship vienvietis" draggable="true">
+            <div id="vienvietis3-0" data-shipid="3"></div>
+        </div>
+        <div class="ship dvivietis" draggable="true">
+            <div id="dvivietis0-0" data-shipid="4"></div>
+            <div id="dvivietis0-1" data-shipid="4"></div>
+        </div>
+        <div class="ship dvivietis" draggable="true">
+            <div id="dvivietis1-0" data-shipid="5"></div>
+            <div id="dvivietis1-1" data-shipid="5"></div>
+        </div>
+        <div class="ship dvivietis" draggable="true">
+            <div id="dvivietis2-0" data-shipid="6"></div>
+            <div id="dvivietis2-1" data-shipid="6"></div>
+        </div>
+        <div class="ship trivietis" draggable="true">
+            <div id="trivietis0-0" data-shipid="7"></div>
+            <div id="trivietis0-1" data-shipid="7"></div>
+            <div id="trivietis0-2" data-shipid="7"></div>
+        </div>
+        <div class="ship trivietis" draggable="true">
+            <div id="trivietis1-0" data-shipid="8"></div>
+            <div id="trivietis1-1" data-shipid="8"></div>
+            <div id="trivietis1-2" data-shipid="8"></div>
+        </div>
+        <div class="ship keturvietis" draggable="true">
+            <div id="keturvietis0-0" data-shipid="9"></div>
+            <div id="keturvietis0-1" data-shipid="9"></div>
+            <div id="keturvietis0-2" data-shipid="9"></div>
+            <div id="keturvietis0-3" data-shipid="9"></div>
+        </div>
+ 
+
+        </div>
+        <div class="chatArea">
+            <div class="chatDisplay" id="chat"></div>
+            <div class="inputArea">
+                <input id="inputchat" placeholder="Enter text here to chat.." type='text'></input>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
